@@ -6,7 +6,7 @@ app.secret_key = "ahalamora"
 
 @app.route("/hello")
 def index():
-    flash("What's your name??")
+    flash("What's your name?")
     return render_template("index.html")
 
 @app.route("/greet", methods=["POST", "GET"])
